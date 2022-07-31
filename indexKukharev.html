@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <title> Заявление о приеме на работу </title>
+</head>
+
+<body>
+    <h1 id="title">Анкета</h1>
+    <div id="form-border">
+        <p id="description">
+            Заполняйте форму аккуратно.
+        </p>
+        <form id="survey-form">
+            <div class="row">
+                <div class="labels">
+                    <label id="name-label" for="name">* Имя:</label>
+                </div>
+                <div class="rowRight">
+                    <input type="text" name="name " id="name" class="input" placeholder="Введите ваше имя и фамилию" required="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label id="email-label" for="email">* Почта:</label>
+                </div>
+                <div class="rowRight">
+                    <input type="email" name="email " id="email" class="input" placeholder="Введите адрес электронной почты" required="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label id="number-label" for="number">* Полных лет:</label>
+                </div>
+                <div class="rowRight">
+                    <input type="number" name="age " id="number" min="1" max="125" class="input" placeholder="Введите, сколько вам лет" required="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label id="contact-label" for="contact">* Номер телефона:</label>
+                </div>
+                <div class="rowRight">
+                    <input type="text" name="contact " id="contact" class="input" placeholder="+7 (910) 999-99-99" required="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="dropdown">Каков ваш профессиональный уровень ?</label>
+                </div>
+                <div class="rowRight">
+                    <select id="dropdown" name="proficiency-level" class="options">
+                        <option disabled="" value="">Выбрать</option>
+                        <option value="intern">Intern</option>
+                        <option value="junior">Junior</option>
+                        <option value="midLevel">Mid Level</option>
+                        <option value="senior">Senior</option>
+                        <option value="lead">Lead</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="currentEmployment"> Текущий статус занятости ?</label>
+                </div>
+                <div class="rowRight">
+                    <ul id="currentEmployment" style="list-style: none;">
+                        <li class="radio">
+                            <label class="labels">
+                                <input name="radio-buttons" value="1" type="radio">Официально работаю</label>
+                        </li>
+                        <li class="radio">
+                            <label class="labels">
+                                <input name="radio-buttons" value="2" type="radio">Временно трудоустроен</label>
+                        </li>
+                        <li class="radio">
+                            <label class="labels">
+                                <input name="radio-buttons" value="3" type="radio">Не работаю</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="info">Как вы узнали о нашей компании ?</label>
+                </div>
+                <div class="rowRight">
+                    <select id="info" name="info" class="options">
+                        <option disabled="" value="">Select an option</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="google">Google</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="linkedin">Vkontakte</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="preferences">Выберите форму работы, которая вам подходит больше всего
+                        <br>(Выделите то, что вам подходит):</label>
+                </div>
+                <div class="rowRight">
+                    <ul id="preferences" style="list-style: none;">
+                        <li class="checkbox">
+                            <label class="labels">
+                                <input name="prefer" value="1" type="checkbox" class="userPreferences">Полный рабочий день</label>
+                        </li>
+                        <li class="checkbox">
+                            <label class="labels">
+                                <input name="prefer" value="2" type="checkbox" class="userPreferences">Работа по контракту</label>
+                        </li>
+                        <li class="checkbox">
+                            <label class="labels">
+                                <input name="prefer" value="3" type="checkbox" class="userPreferences">Временное трудоустройство</label>
+                        </li>
+                        <li class="checkbox">
+                            <label class="labels">
+                                <input name="prefer" value="4" type="checkbox" class="userPreferences">Не полный рабочий день</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="labels">
+                    <label for="summary">Какие качества вы хотите приобрести/развить ?<br>     Почему наша вакансия вас заинтересовала ?</label>
+                </div>
+                <div class="rowRight">
+                    <textarea id="summary" class="input-text" name="summary" maxlength="1000" placeholder="Ответ на вопрос..."></textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+
+</html>
